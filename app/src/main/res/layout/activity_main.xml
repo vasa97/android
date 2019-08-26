@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toLeftOf="@id/glr"
+            app:layout_constraintLeft_toRightOf="@id/gll"
+            app:layout_constraintTop_toBottomOf="@id/glt"
+            android:hint="نام"
+            android:id="@+id/et1"
+    />
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toLeftOf="@id/glr"
+            app:layout_constraintLeft_toRightOf="@id/gll"
+            app:layout_constraintTop_toBottomOf="@id/et1"
+            android:hint="نام خانوادگی"
+            android:id="@+id/et2"
+    />
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toLeftOf="@id/glr"
+            app:layout_constraintLeft_toRightOf="@id/gll"
+            app:layout_constraintTop_toBottomOf="@id/et2"
+            android:hint="شماره تماس"
+            android:id="@+id/et3"
+    />
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toLeftOf="@id/glr"
+            app:layout_constraintLeft_toRightOf="@id/gll"
+            app:layout_constraintTop_toBottomOf="@id/et3"
+            android:hint="پیام"
+            android:id="@+id/et4"
+            android:lines="5"
+    />
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toLeftOf="@id/glr"
+            app:layout_constraintLeft_toRightOf="@id/tv12"
+            app:layout_constraintTop_toBottomOf="@id/et4"
+            android:text=" نام و نام خانوادگی"
+            android:textAlignment="textStart"
+            android:lines="1"
+            android:id="@+id/tv1"
+    />
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintRight_toLeftOf="@id/tv1"
+            app:layout_constraintLeft_toRightOf="@id/gll"
+            app:layout_constraintTop_toBottomOf="@id/et4"
+            app:layout_constraintBottom_toBottomOf="@id/tv1"
+            android:textAlignment="textStart"
+            android:lines="1"
+            android:id="@+id/tv12"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"/>
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toLeftOf="@id/glr"
+            app:layout_constraintLeft_toRightOf="@id/tv22"
+            app:layout_constraintTop_toBottomOf="@id/tv1"
+            android:text="شماره تماس"
+            android:textAlignment="textStart"
+            android:lines="1"
+            android:id="@+id/tv2"
+    />
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toLeftOf="@id/tv2"
+            app:layout_constraintLeft_toRightOf="@id/gll"
+            app:layout_constraintTop_toBottomOf="@id/tv12"
+            app:layout_constraintBottom_toBottomOf="@id/tv2"
+            android:textAlignment="textStart"
+            android:lines="1"
+            android:id="@+id/tv22"
+            app:layout_constraintHorizontal_chainStyle="packed"/>
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toLeftOf="@id/glr"
+            app:layout_constraintLeft_toRightOf="@id/tv32"
+            app:layout_constraintTop_toBottomOf="@id/tv2"
+            android:text="پیام"
+            android:textAlignment="textStart"
+            android:lines="1"
+            android:id="@+id/tv3"
+    />
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toLeftOf="@id/tv3"
+            app:layout_constraintLeft_toRightOf="@id/gll"
+            app:layout_constraintTop_toBottomOf="@id/tv22"
+            app:layout_constraintBottom_toBottomOf="@id/tv3"
+            android:textAlignment="textStart"
+            android:lines="1"
+            android:id="@+id/tv32"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"/>
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toLeftOf="@id/glr"
+            app:layout_constraintLeft_toRightOf="@id/gll"
+            app:layout_constraintTop_toBottomOf="@id/btn"
+            android:paddingTop="10dp"
+            android:hint="پاسخ"
+            android:textAlignment="textStart"
+            android:lines="7"
+            android:id="@+id/answerTv"
+    />
+
+    <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/gll"
+            app:layout_constraintTop_toBottomOf="@id/tv3"
+            android:paddingTop="10dp"
+            android:text="ارسال"
+            android:textAlignment="textStart"
+            android:lines="1"
+            android:id="@+id/btn"
+    />
+
+    <android.support.constraint.Guideline
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gll"
+            app:layout_constraintGuide_begin="16dp"/>
+    <android.support.constraint.Guideline
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_end="16dp"
+            android:id="@+id/glr"/>
+    <android.support.constraint.Guideline
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_begin="16dp"
+            android:id="@+id/glt"/>
+    <android.support.constraint.Guideline
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_end="16dp"
+            android:id="@+id/glb"/>
+
+</android.support.constraint.ConstraintLayout>
